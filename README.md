@@ -1,10 +1,10 @@
 # homebrew-tap
 
-Homebrew tap for [beeper-tui](https://github.com/mitchmalone/beeptui).
+Homebrew tap for [beeptui](https://github.com/mitchmalone/beeptui).
 
 ```sh
-brew install mitchmalone/tap/beeper-tui
+brew install mitchmalone/tap/beeptui
 ```
 
-`Formula/beeper-tui.rb` is generated automatically on each `v*` release of the
+`Formula/beeptui.rb` is generated automatically on each `v*` release of the
 main repo — do not edit by hand.
