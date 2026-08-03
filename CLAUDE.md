@@ -3,7 +3,7 @@
 Homebrew tap for beeptui (`brew install mitchmalone/tap/beeptui`).
 
 **`Formula/beeptui.rb` is generated — never edit it by hand.** The release workflow in the
-`mitchmalone/beeptui` repo (local folder `../beeptui-temp/`) regenerates and pushes it on every
+`mitchmalone/beeptui` repo (local folder `../beeptui/`) regenerates and pushes it on every
 `v*` tag. A hand edit is silently overwritten by the next release.
 
 - Formula wrong or broken? Fix the release workflow in the `beeptui` repo, then cut a release (or
