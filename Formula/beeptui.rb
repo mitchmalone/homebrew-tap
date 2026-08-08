@@ -6,13 +6,13 @@
 class Beeptui < Formula
   desc "Keyboard-first terminal client for Beeper"
   homepage "https://github.com/mitchmalone/beeptui"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/mitchmalone/beeptui/releases/download/v0.3.0/beeptui-darwin-arm64"
-      sha256 "9833cc0ef96752e840bc693ef72155d940e0f3747e3dda69a8f426e6b6f5bd09"
+      url "https://github.com/mitchmalone/beeptui/releases/download/v0.4.0/beeptui-darwin-arm64"
+      sha256 "ae07b83bc914d3e3f2477e2322d4f12564f29476c3bba82c6d921bd1bf4f758c"
 
       def install
         bin.install "beeptui-darwin-arm64" => "beeptui"
@@ -22,8 +22,8 @@ class Beeptui < Formula
 
   on_linux do
     on_intel do
-      url "https://github.com/mitchmalone/beeptui/releases/download/v0.3.0/beeptui-linux-x64"
-      sha256 "330be7675c4f7f369cc1395c246d77d7da60e217a26152e337b369e2696540f2"
+      url "https://github.com/mitchmalone/beeptui/releases/download/v0.4.0/beeptui-linux-x64"
+      sha256 "5f94b23bc2ff2e1762304f5fdd199da205e0a58bc95e315302141d7ebdc0324e"
 
       def install
         bin.install "beeptui-linux-x64" => "beeptui"
