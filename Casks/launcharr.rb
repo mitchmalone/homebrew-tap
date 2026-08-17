@@ -1,6 +1,6 @@
 cask "launcharr" do
-  version "0.3.1"
-  sha256 "0f7c416a1dd5a1d7486c1597dddac21da00c0d154bb9157c71101ef5a771eccc"
+  version "0.4.0"
+  sha256 "73f3102c9700b5973c22ce7b6ccf9a592e8171b47146032162c83190112e359b"
 
   url "https://github.com/mitchmalone/launcharr/releases/download/v#{version}/launcharr-#{version}.zip"
   name "launcharr"
