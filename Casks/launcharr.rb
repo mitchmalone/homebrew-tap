@@ -7,6 +7,8 @@ cask "launcharr" do
   desc "App launcher that dresses up as a shell prompt"
   homepage "https://launcharr.com/"
 
+  deprecate! date: "2026-10-01", because: "is now scuttlarr", replacement_cask: "scuttlarr"
+
   depends_on arch: :arm64
   depends_on macos: :sonoma
   # v0.4 desktop layer: tiling comes with launcharr; the app renders AeroSpace's config.
