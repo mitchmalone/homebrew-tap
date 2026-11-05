@@ -12,6 +12,8 @@ cask "scuttlarr" do
 
   # The app updates itself (selfupdate.rs); brew must not fight it.
   auto_updates true
+  deprecate! date: "2026-11-05", because: "is now scuttler", replacement_cask: "scuttler"
+
   depends_on arch: :arm64
   # The Desktop rung wraps AeroSpace. JankyBorders is deliberately NOT a dependency
   # (GPL-3, opt-in from Settings -> Desktop).
