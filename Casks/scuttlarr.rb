@@ -17,7 +17,8 @@ cask "scuttlarr" do
   depends_on arch: :arm64
   # The Desktop rung wraps AeroSpace. JankyBorders is deliberately NOT a dependency
   # (GPL-3, opt-in from Settings -> Desktop).
-  depends_on cask: "nikitabobko/tap/aerospace"
+  # AeroSpace is not a cask dependency: Mitch runs a fork installed from source as
+  # aerospace-dev (same app, bundle id and socket). The app detects AeroSpace at runtime.
   depends_on macos: :sonoma
 
   app "scuttlarr.app"

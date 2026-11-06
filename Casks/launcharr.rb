@@ -13,7 +13,8 @@ cask "launcharr" do
   depends_on macos: :sonoma
   # v0.4 desktop layer: tiling comes with launcharr; the app renders AeroSpace's config.
   # JankyBorders is deliberately NOT a dependency (GPL-3, opt-in from Settings → Desktop).
-  depends_on cask: "nikitabobko/tap/aerospace"
+  # AeroSpace is not a cask dependency: Mitch runs a fork installed from source as
+  # aerospace-dev (same app, bundle id and socket). The app detects AeroSpace at runtime.
 
   app "launcharr.app"
 
