@@ -2,8 +2,8 @@
 # fills in the version and zip sha256 and writes the whole file on every v* tag —
 # edit here, never in the tap (docs/RELEASING.md).
 cask "scuttler" do
-  version "0.8.5"
-  sha256 "50beae1a4b49ad589813095d7a220ea3f852baa713245f056be84c904666a5e0"
+  version "0.8.6"
+  sha256 "1a8bab080fdc51e241e998f9c0784c97d9de6b7795065698b0a3fa03d6f3b0bb"
 
   url "https://github.com/mitchmalone/scuttler/releases/download/v#{version}/scuttler-#{version}.zip"
   name "scuttler"
@@ -15,8 +15,7 @@ cask "scuttler" do
   depends_on arch: :arm64
   # The Desktop rung wraps AeroSpace. JankyBorders is deliberately NOT a dependency
   # (GPL-3, opt-in from Settings -> Desktop).
-  # AeroSpace is not a cask dependency: Mitch runs a fork installed from source as
-  # aerospace-dev (same app, bundle id and socket). The app detects AeroSpace at runtime.
+  depends_on cask: "nikitabobko/tap/aerospace"
   depends_on macos: :sonoma
 
   app "scuttler.app"
